@@ -1,0 +1,53 @@
+.btn-bd-tertiary {
+    --bs-btn-color: rgb(32, 33, 36);
+    --bs-btn-border-color: rgb(218, 220, 224);
+    --bs-btn-bg: rgb(218, 220, 224);
+    --bs-btn-hover-color: var(--bs-btn-color);
+    --bs-btn-hover-bg: var(--bs-btn-bg);
+    --bs-btn-hover-border-color: var(--bs-btn-border-color);
+    --bs-btn-active-color: var(--bs-btn-color);
+    --bs-btn-active-bg: var(--bs-btn-bg);
+    --bs-btn-active-border-color: #dadce0;
+}
+
+.btn-bd-light {
+    --bs-btn-color: rgb(32, 33, 36);
+    --bs-btn-border-color: rgb(241, 243, 244);
+    --bs-btn-bg: rgb(241, 243, 244);
+    --bs-btn-hover-color: var(--bs-btn-color);
+    --bs-btn-hover-bg: var(--bs-btn-bg);
+    --bs-btn-hover-border-color: var(--bs-btn-border-color);
+    --bs-btn-active-color: var(--bs-btn-color);
+    --bs-btn-active-bg: var(--bs-btn-bg);
+    --bs-btn-active-border-color: #dadce0;
+}
+
+
+/* .btn {width: 100%; height:100%} */
+.s-14 {font-size: 0.875rem}
+.s-15 {font-size: 0.9375rem}
+
+.btn {
+    /* padding: 0; */
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 34px;
+}
+  
+
+.btn-bd-toggleButton {
+    --bs-btn-color: rgb(60, 64, 67);
+    --bs-btn-border-color: rgb(218, 220, 224);
+    --bs-btn-bg: rgb(255, 255, 255);
+    --bs-btn-hover-color: var(--bs-btn-color);
+    --bs-btn-hover-bg: var(--bs-btn-bg);
+    --bs-btn-hover-border-color: var(--bs-btn-border-color);
+    --bs-btn-active-color: rgb(26, 115, 232);
+    --bs-btn-active-border-color: rgb(218, 220, 224);
+    --bs-btn-active-bg: rgb(232, 240, 254);
+}
+
+  

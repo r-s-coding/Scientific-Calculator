@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replica Scientific Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card text-center border-0">
+            <h3>Scientific Calculator</h3>
+            <div class="card-body">
+                <input type="text" class="form-control mb-3 text-end fs-1" id="inputBox" placeholder="0" readonly>
+                <div class="row">
+                    <div id="numeric-buttons" class="col-12 col-md-6">
+                        <div class="row g-2 ">
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block s-15">(</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block s-15">)</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block s-15">&#37;</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block s-14">CE</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">7</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">8</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">9</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block fw-bold pt-1 fs-5">&#247;</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">4</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-custom btn-lg btn-block s-15">5</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">6</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block fw-bold pt-1 fs-5">&times;</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">1</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">2</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">3</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block fw-bold pt-1 fs-5">&#8722;</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block s-15">0</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-light btn-lg btn-block fw-bold pt-1 fs-5">.</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary btn-lg btn-block fw-bold pt-1 fs-5">&#61;</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block fw-bold pt-1 fs-5">&#43;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scientific-buttons" class="d-none d-md-block col-6 order-first">
+                        <div class="row g-2">
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Rad</button>
+                            </div> 
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Deg</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">x!</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Inv</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Sin</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">ln</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">π</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Cos</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">log</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">e</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">tan</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">&radic;</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">Ans</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">EXP</button>
+                            </div>
+                            <div class="col-3 col-md-4">
+                                <button class="btn btn-bd-tertiary btn-lg btn-block">x<sup>y</sup></button>
+                            </div>
+                            <div class="col-3 d-none">
+                                <button class="btn btn-primary btn-lg btn-block fw-bold">&#61;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group btn-toggle col-6 d-md-none">
+                <button class="btn btn-bd-toggleButton rounded-start-pill fw-bold active">123</button>
+                <button class="btn btn-bd-toggleButton rounded-end-pill fw-bold">Fx</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
