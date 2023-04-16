@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Replica Scientific Calculator</title>
@@ -95,11 +94,10 @@
                             <div class="carousel-item">
                                 <div class="scientific-buttons">
                                     <div class="row g-2">
-                                        <div class="col-3 col-md-4">
-                                            <button class="btn btn-bd-tertiary btn-lg btn-block s-14">Rad</button>
-                                        </div>
-                                        <div class="col-3 col-md-4">
-                                            <button class="btn btn-bd-tertiary btn-lg btn-block s-14">Deg</button>
+                                        <div class="radDeg btn-group btn-toggle col-6">
+                                            <button class="btn btn-bd-tertiary2 s-14 active">Rad</button>
+                                            <div class="separator"></div>
+                                            <button class="btn btn-bd-tertiary2 s-14">Deg</button>
                                         </div>
                                         <div class="col-3 col-md-4">
                                             <button class="btn btn-bd-tertiary btn-lg btn-block s-14">x!</button>
@@ -217,11 +215,10 @@
                     </div>
                     <div class="scientific-buttons d-none d-md-block col-12 col-md-6 order-first">
                         <div class="row g-2">
-                            <div class="col-3 col-md-4">
-                                <button class="btn btn-bd-tertiary btn-lg btn-block s-14">Rad</button>
-                            </div>
-                            <div class="col-3 col-md-4">
-                                <button class="btn btn-bd-tertiary btn-lg btn-block s-14">Deg</button>
+                            <div class="radDeg btn-group btn-toggle col-8">
+                                <button class="btn btn-bd-tertiary2 s-14 active">Rad</button>
+                                <div class="separator"></div>
+                                <button class="btn btn-bd-tertiary2 s-14">Deg</button>
                             </div>
                             <div class="col-3 col-md-4">
                                 <button class="btn btn-bd-tertiary btn-lg btn-block s-14">x!</button>
@@ -271,7 +268,7 @@
                 </div>
             </div>
             <!-- Toggle button for the smaller screens -->
-            <div class="btn-group btn-toggle col-6 d-md-none">
+            <div class="switch btn-group btn-toggle col-6 d-md-none">
                 <button class="btn btn-bd-toggleButton rounded-start-pill fw-bold active">123</button>
                 <button class="btn btn-bd-toggleButton rounded-end-pill fw-bold">Fx</button>
             </div>
@@ -282,5 +279,4 @@
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
