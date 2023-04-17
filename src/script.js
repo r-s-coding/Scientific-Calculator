@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const switchBtnGroup = document.querySelector('.switch');
   const switchToggleButtons = switchBtnGroup.querySelectorAll('.btn');
   // Switches which layout is active by clicking on the button
-  switchBtnGroup.addEventListener('click', function () {
+  switchBtnGroup.addEventListener('click', () => {
     switchToggleButtons.forEach(button => {
       button.classList.toggle('active');
     });
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     carousel.setAttribute('data-bs-slide-to', slideIndex);
     carousel.dispatchEvent(new Event('slide.bs.carousel'));
     // Trigger carousel slide transition
-    bsCarousel.to(slideIndex); 
+    bsCarousel.to(slideIndex);
   });
 
   // Keep track of the active state of the radDeg buttons
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const radDegBtnGroups = document.querySelectorAll('.radDeg');
   radDegBtnGroups.forEach(radDegBtnGroup => {
     const radDegToggleButtons = radDegBtnGroup.querySelectorAll('.btn');
-    radDegBtnGroup.addEventListener('click', function () {
+    radDegBtnGroup.addEventListener('click', () => {
       // Toggle the active state of the buttons
       radDegToggleButtons.forEach(button => {
         button.classList.toggle('active');
@@ -40,6 +40,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         });
       });
+    });
+  });
+
+  // Displaying the text content of the clicked button on screen
+  //Getting the reference for the input field and the numeric and scientific buttons
+  const inputField = document.getElementById('inputBox');
+  const numericButtons = document.querySelectorAll('.numeric-buttons button');
+  const scientificButtons = document.querySelectorAll('.scientific-buttons button');
+  // Click event listener for the numeric buttons
+  numericButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      inputField.value += button.textContent;
+    });
+  });
+  // Click event listener for the scientific buttons
+  scientificButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      inputField.value += button.textContent;
+    });
+  });
+  // Click event listener for the CE button
+  const ceButtons = document.querySelectorAll('.btn-ce');
+  ceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      inputField.value = "";
     });
   });
 });
