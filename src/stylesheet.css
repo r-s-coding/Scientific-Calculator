@@ -2,8 +2,7 @@
     height: 60px;
     width: 95%;
     line-height: 60px;
-    overflow-x: scroll;
-    scroll-padding-left: 100%;
+    overflow-x: hidden;
     margin: 0 2.5%;
 }
 
