@@ -101,3 +101,7 @@
     --bs-btn-active-border-color: rgb(218, 220, 224);
     --bs-btn-active-bg: rgb(232, 240, 254);
 }
+
+.switch {
+    width: 47%;
+}
